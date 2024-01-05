@@ -1,4 +1,4 @@
-import { GET_CATEGORIES, GET_TAXES, GET_DISCOUNT, State } from "./types";
+import { GET_CATEGORIES, GET_TAXES, GET_DISCOUNTS, State } from "./types";
 
 const initialState: State = {
   categories: null,
@@ -17,7 +17,7 @@ export default (state = initialState, { type, payload }: ActionType) => {
       return { ...state, categories: payload };
     case GET_TAXES:
       return { ...state, taxes: payload };
-    case GET_DISCOUNT:
+    case GET_DISCOUNTS:
       return { ...state, discounts: payload };
   }
   return state;

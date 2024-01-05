@@ -1,6 +1,6 @@
 export const GET_CATEGORIES = "GET_CATEGORIES";
 export const GET_TAXES = "GET_TAXES";
-export const GET_DISCOUNT = "GET_DISCOUNT";
+export const GET_DISCOUNTS = "GET_DISCOUNTS";
 
 export type MenuItem = {
   name: string;

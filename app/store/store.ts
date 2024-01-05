@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import menuReducer from "./catalog/reducer";
-import { persistReducer, persistStore } from "redux-persist";
-import storage from "@react-native-async-storage/async-storage";
+import catalogReducer from "./catalog/reducer";
+import { persistReducer } from "redux-persist";
 import { combineReducers } from "redux";
+import storage from "@react-native-async-storage/async-storage";
 
 const persistConfig = {
   key: "root",
@@ -10,7 +10,7 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  catalog: persistReducer(persistConfig, menuReducer),
+  catalog: persistReducer(persistConfig, catalogReducer),
 });
 
 export const store = configureStore({
