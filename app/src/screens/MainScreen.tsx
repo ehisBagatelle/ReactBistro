@@ -6,7 +6,7 @@ import { RootState } from "../store/store";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 
 export const MainScreen = () => {
-  const { categories, taxes, discounts } = useAppSelector((state: RootState) => state.catalog);
+  const { categories, discounts } = useAppSelector((state: RootState) => state.catalog);
   const dispatch = useAppDispatch()
   
   useEffect(() => {
@@ -14,7 +14,6 @@ export const MainScreen = () => {
   }, []);
 
   console.log('------> Categorie', categories)
-  console.log('------> Taxes', taxes)
   console.log('------> Discounts', discounts)
 
   return (
