@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { store } from "./store/store";
-import { MainScreen } from "./screens/MainScreen";
+import { store } from "./src/store/store";
+import { MainScreen } from "./src/screens/MainScreen";
 
 export default function App() {
   return (

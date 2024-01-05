@@ -1,6 +1,6 @@
 import { Dispatch } from "redux";
 import { GET_CATEGORIES, GET_TAXES, GET_DISCOUNTS } from "./types";
-import { categories, discounts, taxes } from "./fixture";
+import { categories, discounts, taxes } from "../../../test/fixture";
 
 export const getCatalog = () => (dispatch: Dispatch) => {
   dispatch({

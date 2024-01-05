@@ -1,4 +1,5 @@
-import { Discount, MenuCategory, Tax } from "./types";
+import { Tax, Discount } from "../src/services/OrderService";
+import { MenuCategory } from "../src/store/catalog/types";
 
 export const categories: MenuCategory = {
   appetizers: [
@@ -27,14 +28,14 @@ export const taxes: Tax[] = [
   {
     name: "Tax 1",
     rate: 0.05,
-    appliesToCategories: ["appetizers", "mains", "drinks", "alcohol"],
+    appliesToCategories: ["Appetizers", "Mains", "Drinks", "Alcohol"],
   },
   {
     name: "Tax 2",
     rate: 0.08,
-    appliesToCategories: ["appetizers", "mains", "drinks", "alcohol"],
+    appliesToCategories: ["Appetizers", "Mains", "Drinks", "Alcohol"],
   },
-  { name: "Alcohol Tax", rate: 0.1, appliesToCategories: ["alcohol"] },
+  { name: "Alcohol Tax", rate: 0.1, appliesToCategories: ["Alcohol"] },
 ];
 
 export const discounts: Discount[] = [
