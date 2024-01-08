@@ -1,7 +1,7 @@
 import { GET_CATEGORIES, GET_DISCOUNTS, State } from "./types";
 
 const initialState: State = {
-  categories: null,
+  categories: [],
   discounts: []
 };
 

@@ -1,12 +1,5 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { store } from "./src/store/store";
-import { MainScreen } from "./src/screens/MainScreen";
+import { config } from "./config";
 
-export default function App() {
-  return (
-    <Provider store={store}>
-      <MainScreen />
-    </Provider>
-  );
-}
+module.exports = config.USE_COSMOS
+  ? require('./App.cosmos')
+  : require('./App.main');

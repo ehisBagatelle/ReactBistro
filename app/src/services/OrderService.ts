@@ -1,4 +1,5 @@
 import { taxes } from "../../test/fixture";
+import { formatDecimal } from "../helper";
 
 export type LineItem = {
   name: string;
@@ -13,6 +14,7 @@ export type Tax = {
 };
 
 export type Discount = {
+  id: number
   type: "dollar" | "percentage";
   amount: number;
 };
@@ -57,10 +59,10 @@ export class OrderService implements IOrderService {
     const total = postTaxTotal - totalDiscounts
 
     return {
-      totalTaxes: this.formatDecimal(totalTaxes),
-      totalDiscounts: this.formatDecimal(totalDiscounts),
-      subTotal: this.formatDecimal(subTotal),
-      total: this.formatDecimal(total)
+      totalTaxes: formatDecimal(totalTaxes),
+      totalDiscounts: formatDecimal(totalDiscounts),
+      subTotal: formatDecimal(subTotal),
+      total: formatDecimal(total)
     };
   }
 
@@ -108,10 +110,5 @@ export class OrderService implements IOrderService {
     });
   
     return postTaxTotal - postDiscountTotal;
-  }
-  
-
-  private formatDecimal(value: number): string {
-    return value.toFixed(2)
   }
 }
