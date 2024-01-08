@@ -1,11 +1,9 @@
 import React from "react";
-import {
-  View,
-} from "react-native";
+import { View } from "react-native";
 import { styles } from "./Main.styles";
 import Layout from "../../components/Layout";
 import { Title } from "../../components/Title";
-import { LineItem } from "../../services/OrderService";
+import { Bill, LineItem } from "../../services/OrderService";
 import DiscountAndBill from "../../components/DiscountAndBill";
 import OrderList from "../../components/OrderList";
 import CatalogSection from "../../components/CatalogSection";
@@ -15,14 +13,18 @@ interface Props {
     title: string;
     data: LineItem[];
   }[];
-  order: LineItem[];
+  lineItems: LineItem[];
   gotoDiscounts: () => void;
+  addOrRemoveLineItem: (LineItem: LineItem) => void;
+  bill: Bill;
 }
 
 const MainView: React.FC<Props> = ({
   categories,
-  order,
+  lineItems,
   gotoDiscounts,
+  addOrRemoveLineItem,
+  bill,
 }: Props) => {
   return (
     <Layout>
@@ -30,15 +32,19 @@ const MainView: React.FC<Props> = ({
         <View style={styles.catalog}>
           <CatalogSection
             sections={categories}
-            onCatalogItemPress={(item: LineItem) => console.log(`${item.name}`)}
+            onCatalogItemPress={(item: LineItem) => addOrRemoveLineItem(item)}
           />
         </View>
         <View style={styles.order}>
           <Title name={"Order"} />
-          <OrderList order={order} />
+          <OrderList lineItems={lineItems}  addOrRemoveLineItem={(item: LineItem) => addOrRemoveLineItem(item)}/>
         </View>
       </View>
-      <DiscountAndBill onPressDiscount={gotoDiscounts} order={order} />
+      <DiscountAndBill
+        onPressDiscount={gotoDiscounts}
+        order={lineItems}
+        bill={bill}
+      />
     </Layout>
   );
 };

@@ -78,7 +78,7 @@ describe("OrderService", () => {
     };
 
     const result = orderService.calculateBill(lineItems, [
-      { type: "dollar", amount: 5 },
+      { id: 334, type: "dollar", amount: 5 },
     ]);
     expect(result).toEqual(expectedResult);
   });
@@ -97,7 +97,7 @@ describe("OrderService", () => {
     };
 
     const result = orderService.calculateBill(lineItems, [
-      { type: "percentage", amount: 10 },
+      { id: 444, type: "percentage", amount: 10 },
     ]);
     expect(result).toEqual(expectedResult);
   });
@@ -116,8 +116,8 @@ describe("OrderService", () => {
     };
 
     const result = orderService.calculateBill(lineItems, [
-      { type: "percentage", amount: 10 },
-      { type: "dollar", amount: 5 },
+      { id: 122, type: "percentage", amount: 10 },
+      { id: 123, type: "dollar", amount: 5 },
     ]);
     expect(result).toEqual(expectedResult);
   });
@@ -137,7 +137,7 @@ describe("OrderService", () => {
     };
 
     const result = orderService.calculateBill(lineItems, [
-      { type: "percentage", amount: 10 },
+      { id: 124, type: "percentage", amount: 10 },
     ]);
     expect(result).toEqual(expectedResult);
   })

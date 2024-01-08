@@ -2,6 +2,7 @@ import { taxes } from "../../test/fixture";
 import { formatDecimal } from "../helper";
 
 export type LineItem = {
+  key: string;
   name: string;
   category: string;
   price: number;

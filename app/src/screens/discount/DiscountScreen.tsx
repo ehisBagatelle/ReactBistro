@@ -1,14 +1,24 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import { RootState } from "../../store/store";
-import { useAppSelector } from "../../store/hooks";
-import { useNavigation } from "@react-navigation/native";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import DiscountView from "./DiscountView";
+import { Discount } from "../../services/OrderService";
+import { addOrRemoveDiscount } from "../../store/cart/actions";
 
 export const DiscountScreen = () => {
+  const dispatch = useAppDispatch();
   const { discounts } = useAppSelector((state: RootState) => state.catalog);
-  const navigation = useNavigation();
-
-  return <DiscountView discounts={discounts} />;
+  const { appliedDiscounts } = useAppSelector(
+    (state: RootState) => state.cart
+  );
+  
+  return (
+    <DiscountView
+      discounts={discounts}
+      appliedDiscounts={appliedDiscounts}
+      onPressDiscount={(discount: Discount) =>
+        dispatch(addOrRemoveDiscount(appliedDiscounts, discount))
+      }
+    />
+  );
 };

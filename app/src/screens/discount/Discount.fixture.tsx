@@ -3,6 +3,7 @@ import { View } from "react-native";
 
 import DiscountView from "./DiscountView";
 import { discounts } from "../../../test/fixture";
+import { Discount } from "../../services/OrderService";
 
 export default () => (
   <View
@@ -13,6 +14,12 @@ export default () => (
       padding: 10,
     }}
   >
-    <DiscountView discounts={discounts} />
+    <DiscountView
+      discounts={discounts}
+      appliedDiscounts={discounts}
+      onPressDiscount={function (discount: Discount): void {
+        throw new Error("Function not implemented.");
+      }}
+    />
   </View>
 );

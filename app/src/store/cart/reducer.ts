@@ -1,4 +1,9 @@
-import { ADD_DISCOUNT, ADD_LINE_ITEM, CALCULATE_BILL, State } from "./types";
+import {
+  ADD_OR_REMOVE_DISCOUNT,
+  ADD_OR_REMOVE_LINE_ITEM,
+  CALCULATE_BILL,
+  State,
+} from "./types";
 
 const initialState: State = {
   bill: {
@@ -8,7 +13,7 @@ const initialState: State = {
     total: "00.00",
   },
   lineItems: [],
-  discounts: [],
+  appliedDiscounts: [],
 };
 
 type ActionType = {
@@ -20,10 +25,10 @@ export default (state = initialState, { type, payload }: ActionType) => {
   switch (type) {
     case CALCULATE_BILL:
       return { ...state, bill: payload };
-    case ADD_DISCOUNT:
-      return { ...state, discounts: payload };
-    case ADD_LINE_ITEM:
-      return { ...state, lineItem: payload };
+    case ADD_OR_REMOVE_DISCOUNT:
+      return { ...state, appliedDiscounts: payload };
+    case ADD_OR_REMOVE_LINE_ITEM:
+      return { ...state, lineItems: payload };
   }
   return state;
 };

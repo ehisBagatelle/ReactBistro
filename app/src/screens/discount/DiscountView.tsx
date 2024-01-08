@@ -1,34 +1,35 @@
 import React, { useState } from "react";
-import { Text, View, FlatList, TouchableOpacity, Image, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  FlatList,
+  TouchableOpacity,
+  Image,
+  StyleSheet,
+} from "react-native";
 import Layout from "../../components/Layout";
 import { Discount } from "../../services/OrderService";
 
 interface Props {
   discounts: Discount[];
+  appliedDiscounts: Discount[];
+  onPressDiscount: (discount: Discount) => void;
 }
 
-const DiscountView: React.FC<Props> = ({ discounts }: Props) => {
-  const [selectedDiscounts, setSelectedDiscounts] = useState<number[]>([]);
-
-  const toggleSelection = (discountId: number) => {
-    setSelectedDiscounts((prevSelected) => {
-      if (prevSelected.includes(discountId)) {
-        return prevSelected.filter((id) => id !== discountId);
-      } else {
-        return [...prevSelected, discountId];
-      }
-    });
-  };
-
+const DiscountView: React.FC<Props> = ({
+  discounts,
+  appliedDiscounts,
+  onPressDiscount,
+}: Props) => {
   const renderItem = ({ item }: { item: Discount }) => (
     <TouchableOpacity
-      onPress={() => toggleSelection(item.id)}
+      onPress={() => onPressDiscount(item)}
       style={styles.discountItem}
     >
       <Text>
         {item.type === "dollar" ? `$${item.amount}` : `${item.amount}%`}
       </Text>
-      {selectedDiscounts.includes(item.id) && (
+      {appliedDiscounts.find((discount) => discount.id === item.id) && (
         <Image source={require("../../../assets/icons8-check-50.png")} />
       )}
     </TouchableOpacity>
