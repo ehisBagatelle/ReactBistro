@@ -33,7 +33,6 @@ const OrderList: React.FC<Props> = ({ lineItems, addOrRemoveLineItem }) => {
     data: { item: LineItem },
     rowMap: { [x: string]: { closeRow: () => void } }
   ) => {
-    console.log({ data, rowMap });
     return (
       <View style={styles.rowBack}>
         <TouchableOpacity
