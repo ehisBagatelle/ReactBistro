@@ -1,4 +1,4 @@
-import { IOrderService, OrderService } from "../src/services/OrderService";
+import { IOrderService, OrderService } from "../../../src/services/OrderService";
 
 describe("OrderService", () => {
   let orderService: IOrderService;
@@ -140,5 +140,18 @@ describe("OrderService", () => {
       { id: 124, type: "percentage", amount: 10 },
     ]);
     expect(result).toEqual(expectedResult);
+  })
+
+  it('should not output a discount if there is not item selected', () => {
+    const result = orderService.calculateBill([], [
+      { id: 124, type: "dollar", amount: 5 },
+    ]);
+
+    expect(result).toEqual({
+      totalTaxes: "00.00",
+      totalDiscounts: "00.00",
+      subTotal: "00.00",
+      total: "00.00", 
+    });
   })
 });
