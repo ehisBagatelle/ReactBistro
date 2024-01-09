@@ -5,7 +5,7 @@ import {
   State,
 } from "./types";
 
-const initialState: State = {
+export const initialState: State = {
   bill: {
     totalTaxes: "00.00",
     totalDiscounts: "00.00",

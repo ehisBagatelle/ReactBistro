@@ -3,7 +3,7 @@ import catalogReducer from "./catalog/reducer";
 import cartReducer from "./cart/reducer";
 import { combineReducers } from "redux";
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   catalog: catalogReducer,
   cart: cartReducer
 });

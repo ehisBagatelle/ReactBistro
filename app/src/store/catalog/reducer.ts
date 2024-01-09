@@ -1,6 +1,6 @@
 import { GET_CATEGORIES, GET_DISCOUNTS, State } from "./types";
 
-const initialState: State = {
+export const initialState: State = {
   categories: [],
   discounts: []
 };
