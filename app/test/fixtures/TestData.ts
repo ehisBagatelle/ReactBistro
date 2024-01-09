@@ -1,5 +1,5 @@
-import { Tax, Discount } from "../src/services/OrderService";
-import { MenuCategory } from "../src/store/catalog/types";
+import { Tax, Discount } from "../../src/services/OrderService";
+import { MenuCategory } from "../../src/store/catalog/types";
 
 export const categories: MenuCategory[] = [
   {

@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 
 import DiscountView from "./DiscountView";
-import { discounts } from "../../../test/fixture";
+import { discounts } from "../../../test/fixtures/TestData";
 import { Discount } from "../../services/OrderService";
 
 export default () => (

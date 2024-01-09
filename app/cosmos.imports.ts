@@ -3,9 +3,8 @@
 
 import { RendererConfig, UserModuleWrappers } from 'react-cosmos-core';
 
-import * as fixture0 from './test/fixture';
-import * as fixture1 from './src/screens/main/Main.fixture';
-import * as fixture2 from './src/screens/discount/Discount.fixture';
+import * as fixture0 from './src/screens/main/Main.fixture';
+import * as fixture1 from './src/screens/discount/Discount.fixture';
 
 export const rendererConfig: RendererConfig = {
   "playgroundUrl": "http://localhost:5001",
@@ -13,9 +12,8 @@ export const rendererConfig: RendererConfig = {
 };
 
 const fixtures = {
-  'test/fixture.ts': { module: fixture0 },
-  'src/screens/main/Main.fixture.tsx': { module: fixture1 },
-  'src/screens/discount/Discount.fixture.tsx': { module: fixture2 }
+  'src/screens/main/Main.fixture.tsx': { module: fixture0 },
+  'src/screens/discount/Discount.fixture.tsx': { module: fixture1 }
 };
 
 const decorators = {};

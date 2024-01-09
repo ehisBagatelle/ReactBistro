@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { TouchableOpacity, Image } from "react-native";
 import DiscountView from "../../../src/screens/discount/DiscountView";
-import { discounts } from "../../fixture";
+import { discounts } from "../../fixtures/TestData";
 
 describe("DiscountView component", () => {
   const mockDiscounts = [

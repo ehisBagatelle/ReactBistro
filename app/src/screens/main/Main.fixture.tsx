@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 
 import MainView from "./MainView";
-import { categories } from "../../../test/fixture";
+import { categories } from "../../../test/fixtures/TestData";
 import { LineItem } from "../../services/OrderService";
 
 export default () => (
@@ -24,7 +24,7 @@ export default () => (
         total: "13.75",
       }}
       gotoDiscounts={() => null}
-      addLineItem={(lineItem: LineItem) => null}
+      addOrRemoveLineItem={(lineItem: LineItem) => null}
     />
   </View>
 );

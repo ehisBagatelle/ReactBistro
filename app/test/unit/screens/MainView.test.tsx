@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { View } from "react-native";
 import MainView from "../../../src/screens/main/MainView";
-import { categories } from "../../fixture";
+import { categories } from "../../fixtures/TestData";
 
 const mockGotoDiscounts = jest.fn();
 const mockAddOrRemoveLineItem = jest.fn();

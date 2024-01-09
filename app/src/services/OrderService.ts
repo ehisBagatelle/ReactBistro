@@ -1,4 +1,4 @@
-import { taxes } from "../../test/fixture";
+import { taxes } from "../../test/fixtures/TestData";
 import { formatDecimal } from "../helper";
 
 export type LineItem = {
