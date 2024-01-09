@@ -1,0 +1,474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogSection renders correctly with sections and items 1`] = `
+<RCTScrollView
+  data={
+    [
+      {
+        "data": [
+          {
+            "category": "Test Category",
+            "key": "0002",
+            "name": "Test Item",
+            "price": 9.99,
+          },
+          {
+            "category": "Test Category",
+            "key": "0002",
+            "name": "Test Item",
+            "price": 9.99,
+          },
+          {
+            "category": "Test Category",
+            "key": "0002",
+            "name": "Test Item",
+            "price": 9.99,
+          },
+        ],
+        "title": "Test Section 1",
+      },
+      {
+        "data": [
+          {
+            "category": "Test Category",
+            "key": "0002",
+            "name": "Test Item",
+            "price": 9.99,
+          },
+          {
+            "category": "Test Category",
+            "key": "0002",
+            "name": "Test Item",
+            "price": 9.99,
+          },
+        ],
+        "title": "Test Section 2",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={
+    [
+      0,
+      5,
+    ]
+  }
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5F5",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 45,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text>
+          Test Section 1
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test Item
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          $
+          9.99
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test Item
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          $
+          9.99
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test Item
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          $
+          9.99
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5F5",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 45,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text>
+          Test Section 2
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test Item
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          $
+          9.99
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          Test Item
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+            }
+          }
+        >
+          $
+          9.99
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    />
+  </View>
+</RCTScrollView>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title render title with name and icon 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#F5F5F5",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 45,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text>
+    title
+  </Text>
+  <Image
+    source={
+      {
+        "testUri": "../../../assets/icon.png",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Title render title with only name 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#F5F5F5",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 45,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text>
+    title
+  </Text>
+</View>
+`;

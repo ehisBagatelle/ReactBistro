@@ -11,8 +11,8 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  catalog: persistReducer(persistConfig, catalogReducer),
-  cart: persistReducer(persistConfig, cartReducer),
+  catalog: catalogReducer,
+  cart: cartReducer
 });
 
 export const store = configureStore({

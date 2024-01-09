@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component renders correctly with children 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingVertical": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../assets/icons8-bistro-64.png",
+        }
+      }
+    />
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 60,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      React Bistro
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text>
+      Mock Child
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Layout component renders correctly without children 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingVertical": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../assets/icons8-bistro-64.png",
+        }
+      }
+    />
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 60,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      React Bistro
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;

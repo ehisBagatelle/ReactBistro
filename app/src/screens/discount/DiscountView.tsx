@@ -30,7 +30,7 @@ const DiscountView: React.FC<Props> = ({
         {item.type === "dollar" ? `$${item.amount}` : `${item.amount}%`}
       </Text>
       {appliedDiscounts.find((discount) => discount.id === item.id) && (
-        <Image source={require("../../../assets/icons8-check-50.png")} />
+        <Image style={styles.icon} source={require("../../../assets/icons8-check-50.png")} />
       )}
     </TouchableOpacity>
   );
@@ -58,7 +58,12 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
+    height: 50
   },
+  icon: {
+    height: 30, 
+    width: 30
+  }
 });
 
 export default DiscountView;

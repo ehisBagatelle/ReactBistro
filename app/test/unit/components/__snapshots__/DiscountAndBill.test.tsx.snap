@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DiscountAndBill renders correctly with discount and bill data 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "flex-end",
+      "width": "55%",
+    }
+  }
+>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5F5",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 45,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <Text>
+          Tap To Add Discount
+        </Text>
+        <Image
+          source={
+            {
+              "testUri": "../../../assets/icons8-discount-50.png",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "padding": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        Subtotal
+      </Text>
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        29.97
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        Discounts
+      </Text>
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        5.00
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        Tax
+      </Text>
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        2.00
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+          }
+        }
+      >
+        Total (2 item)
+      </Text>
+      <Text
+        style={
+          {
+            "fontSize": 22,
+            "fontStyle": "normal",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        27.97
+      </Text>
+    </View>
+  </View>
+</View>
+`;

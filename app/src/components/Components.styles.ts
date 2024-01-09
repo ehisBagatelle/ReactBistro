@@ -24,7 +24,6 @@ export const styles = StyleSheet.create({
   rowFront: {
     alignItems: "center",
     backgroundColor: "#FFF",
-
     justifyContent: "center",
     height: 50,
   },

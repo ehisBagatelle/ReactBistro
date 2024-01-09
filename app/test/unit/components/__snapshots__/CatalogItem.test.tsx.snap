@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogItem renders correctly with item details 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "opacity": 1,
+      "padding": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 18,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+      }
+    }
+  >
+    Test Item
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 18,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+      }
+    }
+  >
+    $
+    9.99
+  </Text>
+</View>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderItem component renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFF",
+      "height": 50,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 18,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      Test Item
+    </Text>
+    <Text
+      style={
+        {
+          "fontSize": 18,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      $
+      9.99
+    </Text>
+  </View>
+</View>
+`;

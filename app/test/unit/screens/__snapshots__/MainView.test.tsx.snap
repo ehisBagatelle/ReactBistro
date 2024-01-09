@@ -1,0 +1,915 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainView component renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "flex-start",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingVertical": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../assets/icons8-bistro-64.png",
+        }
+      }
+    />
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 60,
+          "fontStyle": "normal",
+          "fontWeight": "400",
+        }
+      }
+    >
+      React Bistro
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "height": "75%",
+          "justifyContent": "space-between",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "width": "50%",
+          }
+        }
+      >
+        <RCTScrollView
+          data={
+            [
+              {
+                "data": [
+                  {
+                    "category": "Appetizers",
+                    "key": "101",
+                    "name": "Nachos",
+                    "price": 13.99,
+                  },
+                  {
+                    "category": "Appetizers",
+                    "key": "102",
+                    "name": "Calamari",
+                    "price": 11.99,
+                  },
+                  {
+                    "category": "Appetizers",
+                    "key": "103",
+                    "name": "Caesar Salad",
+                    "price": 10.99,
+                  },
+                ],
+                "title": "Appetizers",
+              },
+              {
+                "data": [
+                  {
+                    "category": "Mains",
+                    "key": "104",
+                    "name": "Burger",
+                    "price": 9.99,
+                  },
+                  {
+                    "category": "Mains",
+                    "key": "105",
+                    "name": "Hotdog",
+                    "price": 3.99,
+                  },
+                  {
+                    "category": "Mains",
+                    "key": "106",
+                    "name": "Pizza",
+                    "price": 12.99,
+                  },
+                ],
+                "title": "Mains",
+              },
+              {
+                "data": [
+                  {
+                    "category": "Drinks",
+                    "key": "107",
+                    "name": "Water",
+                    "price": 0,
+                  },
+                  {
+                    "category": "Drinks",
+                    "key": "108",
+                    "name": "Pop",
+                    "price": 2,
+                  },
+                  {
+                    "category": "Drinks",
+                    "key": "109",
+                    "name": "Orange Juice",
+                    "price": 3,
+                  },
+                ],
+                "title": "Drinks",
+              },
+              {
+                "data": [
+                  {
+                    "category": "Alcohol",
+                    "key": "110",
+                    "name": "Beer",
+                    "price": 5,
+                  },
+                  {
+                    "category": "Alcohol",
+                    "key": "111",
+                    "name": "Cider",
+                    "price": 6,
+                  },
+                  {
+                    "category": "Alcohol",
+                    "key": "112",
+                    "name": "Wine",
+                    "price": 7,
+                  },
+                ],
+                "title": "Alcohol",
+              },
+            ]
+          }
+          getItem={[Function]}
+          getItemCount={[Function]}
+          keyExtractor={[Function]}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={
+            [
+              0,
+              5,
+            ]
+          }
+        >
+          <View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "#F5F5F5",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "height": 45,
+                    "justifyContent": "space-between",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text>
+                  Appetizers
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Nachos
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  13.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Calamari
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  11.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Caesar Salad
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  10.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            />
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "#F5F5F5",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "height": 45,
+                    "justifyContent": "space-between",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text>
+                  Mains
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Burger
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  9.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Hotdog
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  3.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "padding": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  Pizza
+                </Text>
+                <Text
+                  style={
+                    {
+                      "fontSize": 18,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                    }
+                  }
+                >
+                  $
+                  12.99
+                </Text>
+              </View>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            />
+            <View
+              style={
+                {
+                  "height": 0,
+                }
+              }
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+      <View
+        style={
+          {
+            "width": "40%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#F5F5F5",
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 45,
+              "justifyContent": "space-between",
+              "paddingHorizontal": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <Text>
+            Order
+          </Text>
+        </View>
+        SwipeListView
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignSelf": "flex-end",
+          "width": "55%",
+        }
+      }
+    >
+      <View
+        style={{}}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#F5F5F5",
+                "display": "flex",
+                "flexDirection": "row",
+                "height": 45,
+                "justifyContent": "space-between",
+                "paddingHorizontal": 10,
+                "width": "100%",
+              }
+            }
+          >
+            <Text>
+              Tap To Add Discount
+            </Text>
+            <Image
+              source={
+                {
+                  "testUri": "../../../assets/icons8-discount-50.png",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "padding": 15,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Subtotal
+          </Text>
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+              }
+            }
+          >
+            $
+            10
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Discounts
+          </Text>
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+              }
+            }
+          >
+            $
+            2
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Tax
+          </Text>
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+              }
+            }
+          >
+            $
+            1
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Total (3 item)
+          </Text>
+          <Text
+            style={
+              {
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+              }
+            }
+          >
+            $
+            9
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
