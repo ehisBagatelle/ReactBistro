@@ -15,7 +15,7 @@ export type Tax = {
 };
 
 export type Discount = {
-  id: number
+  id: number;
   type: "dollar" | "percentage";
   amount: number;
 };
@@ -40,6 +40,15 @@ export class OrderService implements IOrderService {
   ): Bill {
     let subTotal = 0;
 
+    if (!lineItems.length) {
+      return {
+        totalTaxes: "00.00",
+        totalDiscounts: "00.00",
+        subTotal: "00.00",
+        total: "00.00",
+      };
+    }
+
     // Calculate pre-tax total
     lineItems.forEach((item) => {
       subTotal += item.price;
@@ -47,7 +56,7 @@ export class OrderService implements IOrderService {
 
     // Calculate total taxes
     const totalTaxes = this.calculateTotalTaxes(lineItems);
-    
+
     // Calculate post-tax total
     const postTaxTotal = subTotal + totalTaxes;
 
@@ -57,13 +66,13 @@ export class OrderService implements IOrderService {
       postTaxTotal
     );
 
-    const total = postTaxTotal - totalDiscounts
+    const total = postTaxTotal - totalDiscounts;
 
     return {
       totalTaxes: formatDecimal(totalTaxes),
       totalDiscounts: formatDecimal(totalDiscounts),
       subTotal: formatDecimal(subTotal),
-      total: formatDecimal(total)
+      total: formatDecimal(total),
     };
   }
 
@@ -90,26 +99,26 @@ export class OrderService implements IOrderService {
     // The order of applied discounts matter and can change the final output totals
     // We recommend going dollar amount discounts first
     let postDiscountTotal = postTaxTotal;
-  
+
     // Separate dollar amount discounts and percentage discounts
     const dollarAmountDiscounts = appliedDiscounts.filter(
       (discount) => discount.type === "dollar"
     );
-  
+
     const percentageDiscounts = appliedDiscounts.filter(
       (discount) => discount.type === "percentage"
     );
-  
+
     // Apply dollar amount discounts first
     dollarAmountDiscounts.forEach((discount) => {
-        postDiscountTotal -= discount.amount;
+      postDiscountTotal -= discount.amount;
     });
-  
+
     // Apply percentage discounts after dollar amount discounts
     percentageDiscounts.forEach((discount) => {
-        postDiscountTotal -= (discount.amount / 100) * postDiscountTotal;
+      postDiscountTotal -= (discount.amount / 100) * postDiscountTotal;
     });
-  
+
     return postTaxTotal - postDiscountTotal;
   }
 }
