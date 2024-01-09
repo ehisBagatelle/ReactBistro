@@ -59,4 +59,3 @@ This React Bistro App is built using Expo, a framework for React Native developm
 3. Scan the QR code displayed in the terminal or Expo DevTools with your Expo Go app.
 
 This will open the React Bistro App on your Android device or emulator.
-

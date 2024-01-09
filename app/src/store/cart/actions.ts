@@ -1,9 +1,5 @@
 import { Dispatch } from "redux";
-import {
-  ADD_OR_REMOVE_DISCOUNT,
-  ADD_OR_REMOVE_LINE_ITEM,
-  CALCULATE_BILL,
-} from "./types";
+import { ADD_OR_REMOVE_DISCOUNT, ADD_OR_REMOVE_LINE_ITEM, CALCULATE_BILL } from "./types";
 import { Discount, LineItem, OrderService } from "../../services/OrderService";
 
 export const calculateBill =
@@ -23,14 +19,12 @@ export const addOrRemoveLineItem =
       (item) => item.name === lineItem.name
     );
 
-    let updatedLineItems: LineItem[] = []
+    let updatedLineItems;
 
     if (isItemAlreadyAdded) {
-      const updatedLineItems = [...previousLineItems];
-      const prevIndex = previousLineItems.findIndex(
-        (item) => item.key === lineItem.key
+      updatedLineItems = previousLineItems.filter(
+        (item) => item.name !== lineItem.name
       );
-      updatedLineItems.splice(prevIndex, 1);
     } else {
       updatedLineItems = [...previousLineItems, lineItem];
     }
@@ -48,7 +42,7 @@ export const addOrRemoveDiscount =
       (item) => item.id === discount.id
     );
 
-    let updatedDiscounts: Discount[] = []
+    let updatedDiscounts;
 
     if (isItemAlreadyAdded) {
       updatedDiscounts = previousDiscount.filter(

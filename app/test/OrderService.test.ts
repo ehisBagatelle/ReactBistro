@@ -9,7 +9,7 @@ describe("OrderService", () => {
 
   it("should calculate bill for one lineItem with no discount", () => {
     const lineItems = [
-      { name: "Nachos", category: "Appetizers", price: 13.99 },
+      { name: "Nachos", category: "Appetizers", price: 13.99, key: "36" },
     ];
     const expectedTotalTaxRate = 0.05 + 0.08; // Appetizer falls in the category for Tax 1 and Tax 2
     const expectedTotalTax = expectedTotalTaxRate * lineItems[0].price;
@@ -29,7 +29,7 @@ describe("OrderService", () => {
   });
 
   it("should apply all taxes for one lineItem with alcohol category", () => {
-    const lineItems = [{ name: "Beer", category: "Alcohol", price: 5.0 }];
+    const lineItems = [{ name: "Beer", category: "Alcohol", price: 5.0, key: "36" }];
     const expectedTotalTaxRate = 0.05 + 0.08 + 0.1; // Assuming alcohol falls in the category for Tax 1 and Tax 2 and Alcohol Tax
     const expectedTotalTax = expectedTotalTaxRate * lineItems[0].price;
     const expectedsubTotal = lineItems[0].price;
@@ -49,8 +49,8 @@ describe("OrderService", () => {
 
   it("should calculate bill for multiple lineItems with no discount", () => {
     const lineItems = [
-      { name: "Nachos", category: "Appetizers", price: 13.99 },
-      { name: "Beer", category: "Alcohol", price: 5.0 },
+      { name: "Nachos", category: "Appetizers", price: 13.99, key: "36" },
+      { name: "Beer", category: "Alcohol", price: 5.0, key: "37" },
     ];
 
     const expectedResult = {
@@ -66,8 +66,8 @@ describe("OrderService", () => {
 
   it("should apply a dollar discount to the bill", () => {
     const lineItems = [
-      { name: "Nachos", category: "Appetizers", price: 13.99 },
-      { name: "Beer", category: "Alcohol", price: 5.0 },
+      { name: "Nachos", category: "Appetizers", price: 13.99, key: "36" },
+      { name: "Beer", category: "Alcohol", price: 5.0, key: "37" },
     ];
 
     const expectedResult = {
@@ -85,8 +85,8 @@ describe("OrderService", () => {
 
   it("should apply a percentage discount to the bill", () => {
     const lineItems = [
-      { name: "Nachos", category: "Appetizers", price: 13.99 },
-      { name: "Beer", category: "Alcohol", price: 5.0 },
+      { name: "Nachos", category: "Appetizers", price: 13.99, key: "36" },
+      { name: "Beer", category: "Alcohol", price: 5.0, key: "37" },
     ];
 
     const expectedResult = {
@@ -104,8 +104,8 @@ describe("OrderService", () => {
 
   it("should apply a dollar and percentage discount to the bill", () => {
     const lineItems = [
-      { name: "Nachos", category: "Appetizers", price: 13.99 },
-      { name: "Beer", category: "Alcohol", price: 5.0 },
+      { name: "Nachos", category: "Appetizers", price: 13.99, key: "36" },
+      { name: "Beer", category: "Alcohol", price: 5.0, key: "37" },
     ];
 
     const expectedResult = {
@@ -124,9 +124,9 @@ describe("OrderService", () => {
 
   it('should output the example', () => {
     const lineItems = [
-      { name: "Cider", category: "Alcohol", price: 6.0 }, // tax = 1.38
-      { name: "Hotdog", category: "Mains", price: 3.99 }, // tax = 0.51
-      { name: "Orange Juice", category: "Drinks", price: 3.0 }, // tax = 0.39
+      { name: "Cider", category: "Alcohol", price: 6.0, key: "36" }, // tax = 1.38
+      { name: "Hotdog", category: "Mains", price: 3.99, key: "37" }, // tax = 0.51
+      { name: "Orange Juice", category: "Drinks", price: 3.0, key: "38" }, // tax = 0.39
     ];
 
     const expectedResult = {

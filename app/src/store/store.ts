@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import catalogReducer from "./catalog/reducer";
 import cartReducer from "./cart/reducer";
-import { persistReducer } from "redux-persist";
 import { combineReducers } from "redux";
 import storage from "@react-native-async-storage/async-storage";
 
