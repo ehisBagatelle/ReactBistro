@@ -25,7 +25,7 @@ This React Bistro App is built using Expo, a framework for React Native developm
 2. Change to the project directory:
 
     ```bash
-    cd ReactBistro
+    cd ReactBistro/app
     ```
 
 3. Install dependencies:
